@@ -1305,7 +1305,6 @@ select.dropdown {
   box-shadow: none;
   box-sizing: border-box;
   top: 0;
-  /* margin: 0; */
   transform: translate3d(0, 0, 0);
 }
 
@@ -1333,15 +1332,10 @@ select.dropdown {
   border-color: var(--animal-success-active);
 }
 
-.modal .checkbox-container {
-  /* border: 0; */
-}
-
 .modal .checkbox-container::after {
   border: var(--toggle-border-width) solid var(--animal-border);
   box-sizing: border-box;
   top: 0;
-  /* margin: 0; */
   transform: translate3d(var(--toggle-border-width), 0, 0);
 }
 
