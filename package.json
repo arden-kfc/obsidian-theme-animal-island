@@ -1,12 +1,13 @@
 {
-    "name": "obsidian-advanced-theme-template",
-    "version": "1.0.0",
-	"scripts": {
-		"version": "node version-bump.mjs && git add manifest.json versions.json",
-		"lint": "stylelint \"**/*.css\""
-	},
-	"devDependencies": {
-		"stylelint": "^17.0.0",
-		"stylelint-config-obsidianmd": "^0.1.0"
-	}
+  "name": "obsidian-theme-animal-island",
+  "version": "1.0.0",
+  "scripts": {
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "lint": "stylelint \"**/*.css\"",
+    "lint-fix": "stylelint \"**/*.css\" --fix"
+  },
+  "devDependencies": {
+    "stylelint": "^17.0.0",
+    "stylelint-config-obsidianmd": "^0.1.0"
+  }
 }
