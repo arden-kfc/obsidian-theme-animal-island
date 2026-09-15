@@ -1429,8 +1429,6 @@ select.dropdown {
 .cm-link:hover,
 .cm-hmd-internal-link:hover {
   text-decoration: underline;
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features -- text-decoration-color is fully supported in Electron's Chromium; caniuse reports it as only partial */
-  text-decoration-color: var(--interactive-accent);
   text-underline-offset: 3px;
   background-color: rgb(25 200 185 / 8%);
 }
@@ -1525,7 +1523,6 @@ mark,
   color: inherit;
   border-radius: 6px;
   padding: 0 0.2em;
-  box-decoration-break: clone;
 }
 
 /* Horizontal rules — a little mint fade */
@@ -1835,14 +1832,18 @@ mark,
 }
 
 /* Respect reduced motion */
-/* stylelint-disable declaration-no-important -- reduced-motion needs to win over every app/plugin animation regardless of selector specificity */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  :root,
+  body {
+    /* Animal Island motion tokens */
+    --animal-duration-fast: 0.01ms;
+    --animal-duration: 0.01ms;
+    --animal-duration-slow: 0.01ms;
+
+    /* Obsidian's own motion tokens, so app transitions collapse too */
+    --anim-duration-superfast: 0.01ms;
+    --anim-duration-fast: 0.01ms;
+    --anim-duration-moderate: 0.01ms;
+    --anim-duration-slow: 0.01ms;
   }
 }
-/* stylelint-enable declaration-no-important */
