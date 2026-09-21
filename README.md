@@ -6,7 +6,9 @@ chunky "game button" primary actions.
 
 ![Animal Island theme screenshot](screenshots/screenshot.png)
 
+![Animal Island theme in a full Obsidian window](screenshots/screenshot-full.png)
 
+<img src="screenshots/screenshot-mobile.jpeg" alt="Animal Island theme on mobile" width="300">
 
 1. Open Obsidian → Settings → Appearance → Themes, and select **Animal Island**.
 2. Both dark/light modes are supported:

@@ -5,6 +5,10 @@
 
 ![Animal Island 主题截图](screenshots/screenshot.png)
 
+![Animal Island 主题（Obsidian 完整窗口）](screenshots/screenshot-full.png)
+
+<img src="screenshots/screenshot-mobile.jpeg" alt="Animal Island 主题（移动端）" width="300">
+
 ## 安装
 
 1. 打开 Obsidian → 设置 → 外观 → 主题，选择 **Animal Island**。
