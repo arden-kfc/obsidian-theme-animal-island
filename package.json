@@ -7,7 +7,7 @@
     "lint-fix": "stylelint \"**/*.css\" --fix"
   },
   "devDependencies": {
-    "stylelint": "^17.0.0",
+    "stylelint": "^18.0.0",
     "stylelint-config-obsidianmd": "^0.1.0"
   }
 }
